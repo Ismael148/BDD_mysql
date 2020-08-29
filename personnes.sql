@@ -1,3 +1,17 @@
+#création de la base de donnée world
+CREATE DATABASE 'world';
+
+#création d'une table personnes dans la base de donnée world
+CREATE TABLE personnes(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nom VARCHAR,
+  prenom VARCHAR,
+  age INT,
+  taille DECIMAL,
+  poids DECIMAL
+);
+
+#insertion de valeur dans la table
 INSERT INTO personnes(nom, prenom, age, taille, poids) VALUES 
 ('Rakoto', 'Be nify', 10, 1.50 , 70.0),
 ('Lava', 'Rapeto', 25, 2.0, 30.0), 
@@ -5,6 +19,7 @@ INSERT INTO personnes(nom, prenom, age, taille, poids) VALUES
 ('Kiala', 'Manjakely', 100, 1.68, 45.7),
 ('Kiala', 'Pota', 37, 0.8, 50.0);
 
+#Mise à jour de la table
 ALTER TABLE personnes ADD couleur_preferee VARCHAR;
 
 UPDATE personnes SET couleur_preferee = 'rouge' WHERE id = 1;
