@@ -1,7 +1,7 @@
 
 CREATE DATABASE 'world';
 
-# création d'une table personnes dans la base de donnée world
+
 CREATE TABLE personnes(
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   nom VARCHAR,
